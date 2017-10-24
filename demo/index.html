@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQUERY Sub-Select (DEMO)</title>
+
+</head>
+<body>
+<h2>Normal Select : </h2>
+<select name="headsub1" class="headsub1">
+    <option value="10">OPSI AWALAN 1.</option>
+    <option value="20">OPSI AWALAN 2.</option>
+    <option value="30">OPSI AWALAN 3.</option>
+    <option value="40">OPSI AWALAN 4.</option>
+</select>
+<select name="sub1" class="sub1">
+    <option value="10001" class="sub_10">SUB OPSI 1.01</option>
+    <option value="10002" class="sub_10">SUB OPSI 1.02</option>
+    <option value="10003" class="sub_10">SUB OPSI 1.03</option>
+    <option value="10004" class="sub_10">SUB OPSI 1.04</option>
+    <option value="10005" class="sub_10">SUB OPSI 1.05</option>
+    <option value="10006" class="sub_10">SUB OPSI 1.06</option>
+    <option value="10007" class="sub_10">SUB OPSI 1.07</option>
+    <option value="10008" class="sub_10">SUB OPSI 1.08</option>
+    <option value="10009" class="sub_10">SUB OPSI 1.09</option>
+    <option value="10010" class="sub_10">SUB OPSI 1.10</option>
+    <option value="10011" class="sub_10">SUB OPSI 1.10</option>
+    <option value="10012" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10013" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10100" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10200" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10300" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10400" class="sub_10">SUB OPSI 1.00</option>
+    <option value="20001" class="sub_20">SUB OPSI 2.01</option>
+    <option value="20002" class="sub_20">SUB OPSI 2.02</option>
+    <option value="20003" class="sub_20">SUB OPSI 2.03</option>
+    <option value="20004" class="sub_20">SUB OPSI 2.04</option>
+    <option value="20005" class="sub_20">SUB OPSI 2.05</option>
+    <option value="20006" class="sub_20">SUB OPSI 2.06</option>
+    <option value="20007" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20008" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20009" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20010" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20011" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20012" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20013" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20100" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20200" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20300" class="sub_20">SUB OPSI 2.00</option>
+    <option value="30001" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30002" class="sub_30">SUB OPSI 3.01</option>
+    <option value="30003" class="sub_30">SUB OPSI 3.02</option>
+    <option value="30004" class="sub_30">SUB OPSI 3.03</option>
+    <option value="30005" class="sub_30">SUB OPSI 3.04</option>
+    <option value="30006" class="sub_30">SUB OPSI 3.05</option>
+    <option value="30007" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30008" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30009" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30010" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30011" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30100" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30200" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30300" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30400" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30500" class="sub_30">SUB OPSI 3.00</option>
+    <option value="40001" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40002" class="sub_40">SUB OPSI 4.01</option>
+    <option value="40003" class="sub_40">SUB OPSI 4.02</option>
+    <option value="40004" class="sub_40">SUB OPSI 4.03</option>
+    <option value="40005" class="sub_40">SUB OPSI 4.04</option>
+    <option value="40006" class="sub_40">SUB OPSI 4.05</option>
+    <option value="40007" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40008" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40009" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40010" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40100" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40200" class="sub_40">SUB OPSI 4.00</option>
+</select>
+<h2>Menggunakan sub select : </h2>
+<select name="selectheader1" class="selectheader1">
+    <option value="10">OPSI AWALAN 1.</option>
+    <option value="20">OPSI AWALAN 2.</option>
+    <option value="30">OPSI AWALAN 3.</option>
+    <option value="40">OPSI AWALAN 4.</option>
+</select>
+<select name="selectsub1" class="selectsub1">
+    <option value="10001" class="sub_10">SUB OPSI 1.01</option>
+    <option value="10002" class="sub_10">SUB OPSI 1.02</option>
+    <option value="10003" class="sub_10">SUB OPSI 1.03</option>
+    <option value="10004" class="sub_10">SUB OPSI 1.04</option>
+    <option value="10005" class="sub_10">SUB OPSI 1.05</option>
+    <option value="10006" class="sub_10">SUB OPSI 1.06</option>
+    <option value="10007" class="sub_10">SUB OPSI 1.07</option>
+    <option value="10008" class="sub_10">SUB OPSI 1.08</option>
+    <option value="10009" class="sub_10">SUB OPSI 1.09</option>
+    <option value="10010" class="sub_10">SUB OPSI 1.10</option>
+    <option value="10011" class="sub_10">SUB OPSI 1.10</option>
+    <option value="10012" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10013" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10100" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10200" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10300" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10400" class="sub_10">SUB OPSI 1.00</option>
+    <option value="20001" class="sub_20">SUB OPSI 2.01</option>
+    <option value="20002" class="sub_20">SUB OPSI 2.02</option>
+    <option value="20003" class="sub_20">SUB OPSI 2.03</option>
+    <option value="20004" class="sub_20">SUB OPSI 2.04</option>
+    <option value="20005" class="sub_20">SUB OPSI 2.05</option>
+    <option value="20006" class="sub_20">SUB OPSI 2.06</option>
+    <option value="20007" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20008" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20009" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20010" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20011" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20012" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20013" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20100" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20200" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20300" class="sub_20">SUB OPSI 2.00</option>
+    <option value="30001" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30002" class="sub_30">SUB OPSI 3.01</option>
+    <option value="30003" class="sub_30">SUB OPSI 3.02</option>
+    <option value="30004" class="sub_30">SUB OPSI 3.03</option>
+    <option value="30005" class="sub_30">SUB OPSI 3.04</option>
+    <option value="30006" class="sub_30">SUB OPSI 3.05</option>
+    <option value="30007" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30008" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30009" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30010" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30011" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30100" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30200" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30300" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30400" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30500" class="sub_30">SUB OPSI 3.00</option>
+    <option value="40001" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40002" class="sub_40">SUB OPSI 4.01</option>
+    <option value="40003" class="sub_40">SUB OPSI 4.02</option>
+    <option value="40004" class="sub_40">SUB OPSI 4.03</option>
+    <option value="40005" class="sub_40">SUB OPSI 4.04</option>
+    <option value="40006" class="sub_40">SUB OPSI 4.05</option>
+    <option value="40007" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40008" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40009" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40010" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40100" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40200" class="sub_40">SUB OPSI 4.00</option>
+</select>
+<h2>Menggunakan html data-* : </h2>
+<select name="selectheader" data-plugin="subselect" data-sub=".selectsub" data-filter=".sub_" class="selectheader">
+    <option value="10">OPSI AWALAN 1.</option>
+    <option value="20">OPSI AWALAN 2.</option>
+    <option value="30">OPSI AWALAN 3.</option>
+    <option value="40">OPSI AWALAN 4.</option>
+</select>
+<select name="selectsub" class="selectsub">
+    <option value="10001" class="sub_10">SUB OPSI 1.01</option>
+    <option value="10002" class="sub_10">SUB OPSI 1.02</option>
+    <option value="10003" class="sub_10">SUB OPSI 1.03</option>
+    <option value="10004" class="sub_10">SUB OPSI 1.04</option>
+    <option value="10005" class="sub_10">SUB OPSI 1.05</option>
+    <option value="10006" class="sub_10">SUB OPSI 1.06</option>
+    <option value="10007" class="sub_10">SUB OPSI 1.07</option>
+    <option value="10008" class="sub_10">SUB OPSI 1.08</option>
+    <option value="10009" class="sub_10">SUB OPSI 1.09</option>
+    <option value="10010" class="sub_10">SUB OPSI 1.10</option>
+    <option value="10011" class="sub_10">SUB OPSI 1.10</option>
+    <option value="10012" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10013" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10100" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10200" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10300" class="sub_10">SUB OPSI 1.00</option>
+    <option value="10400" class="sub_10">SUB OPSI 1.00</option>
+    <option value="20001" class="sub_20">SUB OPSI 2.01</option>
+    <option value="20002" class="sub_20">SUB OPSI 2.02</option>
+    <option value="20003" class="sub_20">SUB OPSI 2.03</option>
+    <option value="20004" class="sub_20">SUB OPSI 2.04</option>
+    <option value="20005" class="sub_20">SUB OPSI 2.05</option>
+    <option value="20006" class="sub_20">SUB OPSI 2.06</option>
+    <option value="20007" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20008" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20009" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20010" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20011" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20012" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20013" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20100" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20200" class="sub_20">SUB OPSI 2.00</option>
+    <option value="20300" class="sub_20">SUB OPSI 2.00</option>
+    <option value="30001" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30002" class="sub_30">SUB OPSI 3.01</option>
+    <option value="30003" class="sub_30">SUB OPSI 3.02</option>
+    <option value="30004" class="sub_30">SUB OPSI 3.03</option>
+    <option value="30005" class="sub_30">SUB OPSI 3.04</option>
+    <option value="30006" class="sub_30">SUB OPSI 3.05</option>
+    <option value="30007" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30008" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30009" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30010" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30011" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30100" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30200" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30300" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30400" class="sub_30">SUB OPSI 3.00</option>
+    <option value="30500" class="sub_30">SUB OPSI 3.00</option>
+    <option value="40001" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40002" class="sub_40">SUB OPSI 4.01</option>
+    <option value="40003" class="sub_40">SUB OPSI 4.02</option>
+    <option value="40004" class="sub_40">SUB OPSI 4.03</option>
+    <option value="40005" class="sub_40">SUB OPSI 4.04</option>
+    <option value="40006" class="sub_40">SUB OPSI 4.05</option>
+    <option value="40007" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40008" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40009" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40010" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40100" class="sub_40">SUB OPSI 4.00</option>
+    <option value="40200" class="sub_40">SUB OPSI 4.00</option>
+</select>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../src/jquery.subselect.js"></script>
+<script type="text/javascript">
+    $('.selectheader1').subselect({
+        sub: '.selectsub1',
+        filter: '.sub_'
+    });
+    $('.selectheader').subselect();
+</script>
+</body>
+</html>
